@@ -147,7 +147,7 @@ public class Calculator implements ActionListener {
 				result = num1/num2;	
 				break;
 			}
-			textfield.setText(String.valueOf(result));
+			textfield.setText((String.format("%.5f", result).replace(",", "."))); 
 			num1=result;
 		}
 		if(e.getSource() == clrButton) {
